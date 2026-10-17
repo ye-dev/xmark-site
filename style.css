@@ -1,0 +1,42 @@
+:root {
+  --bg: #F2F2F7;
+  --card: #FFFFFF;
+  --text: #1C1C1E;
+  --muted: #5E5E63;
+  --accent: #551A8B;
+  --accent-soft: #EFE7F6;
+  --rule: #E5E5EA;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --card: #1C1C1E;
+    --text: #FFFFFF;
+    --muted: #A1A1A8;
+    --accent: #B48CE6;
+    --accent-soft: #2B1D3A;
+    --rule: #38383A;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+header { margin-bottom: 28px; }
+.eyebrow { font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin: 0; }
+h1 { font-size: 34px; line-height: 1.15; margin: 4px 0 8px; letter-spacing: -0.02em; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { margin: 0 0 10px; }
+ul { padding-left: 22px; margin: 0 0 10px; }
+a { color: var(--accent); }
+.lede { color: var(--muted); margin: 0; }
+.card { background: var(--card); border-radius: 14px; padding: 20px; margin: 16px 0; }
+.contact { background: var(--accent-soft); border-radius: 14px; padding: 18px 20px; margin: 20px 0; }
+.contact a { font-weight: 600; }
+nav { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 12px; font-size: 15px; }
+footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; }
